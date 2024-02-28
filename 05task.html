@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    let myResume={
+    "basics": {
+        "id": "1",
+      "name": "LIKITHA",
+      "email": "likithadevagiri1012@gamil.com",
+      "phone": 8309010000,
+      "location": {
+        "address": "Syamalanagar",
+        "postalCode": 522006,
+        "city": "Guntur",
+        "state": "Andhra Pradesh",
+        "country": "India"
+      } ,
+      "degree": "B.TECH",
+      "profiles": [
+        {
+          "website": "https://www.linkedin.com/in/likithadevagiri/",
+          "github":"https://github.com/LIKITHA1912"
+        }
+      ]
+    },
+    "work": [
+      {
+        "id": "2",
+        "company": "Infosys PVT",
+        "startDate": "2021-01-10",
+        "endDate": "2021-12-19",
+        "position": "System Engineer",
+        
+      },
+    ],
+    "education": [
+      {
+        "id": "3",
+        "university": "MAHINDRA UNIVERSITY",
+        "department": "civil",
+        "gpa": 8,
+        "batch start year": 2016,
+        "batch end year": 2020,
+        
+      }
+    ],
+    "skills": [
+      {
+        "id": "4",
+        "name": "javascript,java,nodejs,mysql",
+        "level": "intermediate",
+      }
+    ],
+    "languages": [
+      {
+        "id": "5",
+        "language": "English,Telugu,Hindi",
+      }
+    ],
+    "interests": [
+      {
+        "id": "6",
+        "name": "editing,gardening",
+      }
+    ]
+  }
+  console.log(myResume);
+
+  for(var i=0;i<myResume.length;i++){
+        console.log(myResume[i].name)
+    }
+    
+    
+    var candidates = [{
+    "name" : "Bharath", 
+    "university"   : "JNTU",
+    "gpa" : "7.9",
+    "mail": "bharath786@gmail.com"
+},
+{
+    "name" : "Sarath", 
+    "university"   : "AIIMS",
+    "gpa" : "8.9",
+    "mail": "sarath786@gmail.com"
+}];              
+   
+  for (var i = 0; i <candidates.length; i++) {
+    console.log(candidates[i].name);
+    }
+
+  for (var key in candidates){
+        console.log(candidates[key].university);              
+   }
+
+   candidates.forEach(function(obj){console.log(obj.name);});
+
+   let email = "";
+    for (let x of candidates[key].mail) {
+        email += x; 
+    }
+    console.log(email);
+  
+    </script>
+</body>
+</html>
